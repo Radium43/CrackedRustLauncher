@@ -55,11 +55,11 @@ namespace CrackedRustAkladLauncher
             //see id its Gamewer or Normal
             if (guna2CustomCheckBox1.Checked)
             {
-                Process.Start("C:\\Games\\Rust\\aklad.exe");
+                Process.Start("C:\\Games\\Rust\\GameWer\\Alkad.exe");
             }
             else
             {
-                Process.Start("C:\\Games\\Rust\\Rustclient.exe");
+                Process.Start("C:\\Games\\Rust\\RustClient.exe");
             }
         }
 
