@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blazorise.LoadingIndicator</name>
+    </assembly>
+    <members>
+        <member name="M:Blazorise.LoadingIndicator.Config.AddLoadingIndicator(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register LoadingIndicator service.
+            </summary>
+            <param name="serviceCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Blazorise.LoadingIndicator.ILoadingIndicatorService">
+            <summary>
+            A service to control LoadingIndicator components
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.ILoadingIndicatorService.Visible">
+            <summary>
+            Returns indicator Visible state shared by all indicator instances or null if the state is not the same for all indicators.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.ILoadingIndicatorService.Initializing">
+            <summary>
+            Returns Initializing state shared by all indicator instances or null if the state is not the same for all indicators.
+            </summary>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.ILoadingIndicatorService.Show">
+            <summary>
+            Show loading indicator
+            </summary>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.ILoadingIndicatorService.Hide">
+            <summary>
+            Hide loading indicator
+            </summary>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.ILoadingIndicatorService.SetInitializing(System.Boolean)">
+            <summary>
+            Set Initializing state
+            </summary>
+            <param name="value">true or false</param>
+        </member>
+        <member name="T:Blazorise.LoadingIndicator.LoadingIndicator">
+            <summary>
+            A wrapper component that adds a loading spinner or shows a loading message.
+            Fully templatable, supports two-way binding, direct use via @ref
+            </summary>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.Dispose(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.BuildClasses(Blazorise.Utilities.ClassBuilder)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.DirtyClasses">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.DirtyStyles">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.Show">
+            <summary>
+            Show loading indicator
+            </summary>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.Hide">
+            <summary>
+            Hide loading indicator
+            </summary>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.SetVisible(System.Boolean)">
+            <summary>
+            Set component Busy state
+            </summary>
+            <param name="value">true or false</param>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicator.SetInitializing(System.Boolean)">
+            <summary>
+            Set component Loaded state
+            </summary>
+            <param name="value">true or false</param>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorClassBuilder">
+            <summary>
+            Indicator class builder.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorClassNames">
+            <summary>
+            Gets indicator class-names.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorStyleBuilder">
+            <summary>
+            Indicator style builder.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorStyleNames">
+            <summary>
+            Gets indicator style-names.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.Spinner">
+            <summary>
+            Workaround for issue https://github.com/dotnet/aspnetcore/issues/15311
+            Setting svg width or height to null if it had a value before throws an exception
+            Using string interpolation instead of declaring it in a .razor file
+            Graphics courtesy of https://icons8.com/preloaders/en/search/spinner#
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.Service">
+            <summary>
+            Service used to control this instance.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.Initializing">
+            <summary>
+            Indicates whether component should display initializing or actual content.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.Visible">
+            <summary>
+            Indicates whether the loading indicator is visible.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.InitializingChanged">
+            <summary>
+            Occurs when Initializing state has changed.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.VisibleChanged">
+            <summary>
+            Occurs when Visible state has changed.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.ChildContent">
+            <summary>
+            Specifies the content to be rendered inside this <see cref="T:Blazorise.LoadingIndicator.LoadingIndicator"/>.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorTemplate">
+            <summary>
+            Busy indicator template.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.InitializingTemplate">
+            <summary>
+            Loading state template.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.SpinnerBackground">
+            <summary>
+            Spinner background color.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.SpinnerColor">
+            <summary>
+            Defines the spinner color in a HEX format.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.SpinnerWidth">
+            <summary>
+            Defines the spinner HTML width, eg. "64px".
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.SpinnerHeight">
+            <summary>
+            Defines the spinner HTML height, eg. "64px".
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorVerticalPlacement">
+            <summary>
+            Indicator vertical position.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorHorizontalPlacement">
+            <summary>
+            Indicator horizontal position.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorPadding">
+            <summary>
+            Indicator div padding.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.IndicatorBackground">
+            <summary>
+            Busy screen color.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.FullScreen">
+            <summary>
+            Show busy indicator full screen.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.FadeIn">
+            <summary>
+            Fade in indicator into view.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.FadeInDuration">
+            <summary>
+            Fade in duration in milliseconds. Default is 700 ms.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.Inline">
+            <summary>
+            Wrap inline content.
+            </summary>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicator.ZIndex">
+            <summary>
+            Overlay screen z-index.
+            </summary>
+        </member>
+        <member name="T:Blazorise.LoadingIndicator.LoadingIndicatorPlacement">
+            <summary>
+            Defines the placement of the loading indicator.
+            </summary>
+        </member>
+        <member name="F:Blazorise.LoadingIndicator.LoadingIndicatorPlacement.Top">
+            <summary>
+            Top side.
+            </summary>
+        </member>
+        <member name="F:Blazorise.LoadingIndicator.LoadingIndicatorPlacement.Bottom">
+            <summary>
+            Bottom side.
+            </summary>
+        </member>
+        <member name="F:Blazorise.LoadingIndicator.LoadingIndicatorPlacement.Start">
+            <summary>
+            Start side.
+            </summary>
+        </member>
+        <member name="F:Blazorise.LoadingIndicator.LoadingIndicatorPlacement.End">
+            <summary>
+            End side.
+            </summary>
+        </member>
+        <member name="F:Blazorise.LoadingIndicator.LoadingIndicatorPlacement.Middle">
+            <summary>
+            Middle.
+            </summary>
+        </member>
+        <member name="T:Blazorise.LoadingIndicator.LoadingIndicatorService">
+            <inheritdoc />
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicatorService.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicatorService.Show">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicatorService.Hide">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicatorService.SetInitializing(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicatorService.Blazorise#LoadingIndicator#ILoadingIndicatorService#Subscribe(Blazorise.LoadingIndicator.LoadingIndicator)">
+            <summary>
+            Subscribe indicator to change events and save reference
+            </summary>
+            <param name="indicator"></param>
+        </member>
+        <member name="M:Blazorise.LoadingIndicator.LoadingIndicatorService.Blazorise#LoadingIndicator#ILoadingIndicatorService#Unsubscribe(Blazorise.LoadingIndicator.LoadingIndicator)">
+            <summary>
+            Unsubscribe indicator from change events and remove reference
+            </summary>
+            <param name="indicator"></param>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicatorService.Visible">
+            <inheritdoc/>
+        </member>
+        <member name="P:Blazorise.LoadingIndicator.LoadingIndicatorService.Initializing">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

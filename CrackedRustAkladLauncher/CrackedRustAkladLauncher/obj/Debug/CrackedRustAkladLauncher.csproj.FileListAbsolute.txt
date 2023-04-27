@@ -1,0 +1,16 @@
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\bin\Debug\CrackedRustAkladLauncher.exe.config
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\bin\Debug\CrackedRustAkladLauncher.exe
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\bin\Debug\CrackedRustAkladLauncher.pdb
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\bin\Debug\CircularProgressBar.dll
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\bin\Debug\Guna.UI2.dll
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\bin\Debug\WinFormAnimation.dll
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\bin\Debug\CircularProgressBar.xml
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.csproj.AssemblyReference.cache
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.csproj.SuggestedBindingRedirects.cache
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.Form1.resources
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.Properties.Resources.resources
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.csproj.GenerateResource.cache
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.csproj.CoreCompileInputs.cache
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.csproj.CopyComplete
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.exe
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Debug\CrackedRustAkladLauncher.pdb
