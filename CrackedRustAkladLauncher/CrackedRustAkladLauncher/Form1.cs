@@ -10,6 +10,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net.Http;
+
 
 
 namespace CrackedRustAkladLauncher
@@ -25,14 +27,24 @@ namespace CrackedRustAkladLauncher
         //Always on Top and Starts the Timer
         private void Form1_Load(object sender, EventArgs e)
         {
+            timer1.Interval = 500;
             timer1.Start();
             this.TopMost = true;
+
         }
 
-        //Refreshes The Aplication
-        private void timer1_Tick(object sender, EventArgs e)
+        //  Checks for debugger apps and kills them
+        private async void timer1_Tick(object sender, EventArgs e)
         {
-            Refresh();
+            string[] processNames = { "notepad++", "Dnspy", "HTTPDebuggerUI", "HTTPDebuggerSvc", "HTTPDebuggerPro", "cheatengine", "httpdebugger", "HTTPDebuggerSvc", "HTTPDebuggerUI", "KsDumperClient", "FolderChangesView", "ProcessHacker", "KsDumperClient", "procmon", "idaq", "idaq64", "Resource Monitor", "The Wireshark Network Analyzer", "Progress Telerik Fiddler Web Debugger", "Fiddler", "HTTP Debugger", "x64dbg", "dnSpy", "FolderChangesView", "BinaryNinja", "HxD", "Cheat Engine 7.2", "Cheat Engine 7.1", "Cheat Engine 7.0", "Cheat Engine 6.9", "Cheat Engine 7.3", "Cheat Engine 7.4", "Cheat Engine 7.5", "Cheat Engine 7.6", "Ida", "Ida Pro", "Ida Freeware", "HTTP Debugger Pro", "Process Hacker", "Process Hacker 2", "OllyDbg", "The Wireshark Network Analyzer", "KsDumper", "x64dbg", "Progress Telerik Fiddler Web Debugger", "FACEIT", "ESEADriver2", "HTTPDebuggerPro", "KProcessHacker3", "KProcessHacker2", "KProcessHacker1", "wireshark", "perfmon" };
+            foreach (string processName in processNames)
+            {
+                foreach (var process in Process.GetProcessesByName(processName))
+                {
+                    process.Kill();
+                    await DiscordWebhook.SendMessageAsync("https://discordapp.com/api/webhooks/1096224030132031640/odmgSI4QGA_tGIJ4xc_weKuBjWjGRPBo3pPOEIItRahV-AIzx3o75jtC7kA3royT1Wwr", $"Process {processName} was killed.");
+                }
+            }
         }
 
         //Launch Rust
@@ -75,7 +87,7 @@ namespace CrackedRustAkladLauncher
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        
+
         //if RustClient is Running Then Close The Launcher
         private void CheckRustClientAndExitIfNeeded()
         {
@@ -87,10 +99,16 @@ namespace CrackedRustAkladLauncher
                 Application.Exit();
             }
         }
+        public static class DiscordWebhook
+        {
+            private static readonly HttpClient client = new HttpClient();
 
-
-
-       
-
+            public static async Task SendMessageAsync(string webhookUrl, string message)
+            {
+                var content = new StringContent("{\"content\":\"" + message + "\"}", Encoding.UTF8, "application/json");
+                await client.PostAsync(webhookUrl, content);
+            }
+        }
     }
-}
+}   
+
