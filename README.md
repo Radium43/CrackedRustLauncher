@@ -24,9 +24,6 @@ My Other projects
 [View my Other Public projects](https://github.com/Radium43?tab=repositories)
 
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=adolf-rizzler.lol/Work/q2a20vni.png)
 
 
 ## 🔗 Links
