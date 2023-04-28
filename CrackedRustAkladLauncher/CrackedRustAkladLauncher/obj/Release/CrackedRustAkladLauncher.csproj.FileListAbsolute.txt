@@ -30,3 +30,4 @@ C:\Users\Nate\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLaun
 C:\Users\Nate\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Release\CrackedRustAkladLauncher.csproj.CopyComplete
 C:\Users\Nate\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Release\CrackedRustAkladLauncher.exe
 C:\Users\Nate\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Release\CrackedRustAkladLauncher.pdb
+C:\Users\njdou\OneDrive\Documents\GitHub\CrackedRustLauncher\CrackedRustAkladLauncher\CrackedRustAkladLauncher\obj\Release\CrackedRustAkladLauncher.PreLoad.resources

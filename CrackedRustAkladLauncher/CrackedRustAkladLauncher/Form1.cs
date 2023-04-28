@@ -27,7 +27,7 @@ namespace CrackedRustAkladLauncher
         //Always on Top and Starts the Timer
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer1.Interval = 500;
+            timer1.Interval = 100;
             timer1.Start();
             this.TopMost = true;
 
