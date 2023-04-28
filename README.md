@@ -30,8 +30,7 @@ My Other projects
 
 
 ## 🔗 Links
-![https://discord.gg/ryrUGzKhWU](https://discord.gg/q7skuVjw9F)
-
+- Discord Server https://discord.gg/q7skuVjw9F
 
 ![Logo](https://media.discordapp.net/attachments/938950846702567505/1100954807478534224/Eclipse-1.png)
 
