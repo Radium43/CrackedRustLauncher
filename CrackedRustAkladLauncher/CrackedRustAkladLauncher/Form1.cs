@@ -42,7 +42,7 @@ namespace CrackedRustAkladLauncher
                 foreach (var process in Process.GetProcessesByName(processName))
                 {
                     process.Kill();
-                    await DiscordWebhook.SendMessageAsync("https://discordapp.com/api/webhooks/1096224030132031640/odmgSI4QGA_tGIJ4xc_weKuBjWjGRPBo3pPOEIItRahV-AIzx3o75jtC7kA3royT1Wwr", $"Process {processName} was killed.");
+                    await DiscordWebhook.SendMessageAsync("Your Webhook here", $"Process {processName} was killed.");
                 }
             }
         }
