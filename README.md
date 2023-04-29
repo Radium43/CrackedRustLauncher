@@ -15,7 +15,7 @@ In This Source i Made i will also include basic anti crack protections
 
 - Add a Auth if Wanted
 
-- Add more Ui Stuff
+- Addded Discord Rpc
 
 
 ## Related
