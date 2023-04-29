@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net.Http;
+using DiscordRPC;
+
 
 
 
@@ -30,6 +32,8 @@ namespace CrackedRustAkladLauncher
             timer1.Interval = 100;
             timer1.Start();
             this.TopMost = true;
+            InitDiscordRPC();
+            SetDiscordRPC("Playing Cracked Rust Launcher", "Made by Radium");
 
         }
 
@@ -109,6 +113,34 @@ namespace CrackedRustAkladLauncher
                 await client.PostAsync(webhookUrl, content);
             }
         }
+
+        private DiscordRpcClient client;
+
+        private void InitDiscordRPC()
+        {
+            client = new DiscordRpcClient("1101762854253772841");
+            client.Initialize();
+        }
+
+        private void SetDiscordRPC(string details, string state)
+        {
+            var presence = new RichPresence()
+            {
+                Details = details,
+                State = state,
+                Assets = new Assets()
+                {
+                    LargeImageKey = "eclipse",
+                    LargeImageText = "LARGE_IMAGE_TEXT_HERE",
+                    SmallImageKey = "eclipse",
+                    SmallImageText = "SMALL_IMAGE_TEXT_HERE"
+                }
+            };
+            client.SetPresence(presence);
+        }
+
+
+
     }
 }   
 
