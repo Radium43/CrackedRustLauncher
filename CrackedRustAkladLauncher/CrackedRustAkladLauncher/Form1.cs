@@ -33,7 +33,7 @@ namespace CrackedRustAkladLauncher
             timer1.Start();
             this.TopMost = true;
             InitDiscordRPC();
-            SetDiscordRPC("Playing Cracked Rust Launcher", "Made by Radium");
+            SetDiscordRPC("Playing Cracked Rust Launcher", "Made by @Radiumhvh");
 
         }
 
